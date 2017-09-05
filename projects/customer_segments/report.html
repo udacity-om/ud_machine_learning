@@ -14223,7 +14223,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xf871208&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xf890208&gt;</pre>
 </div>
 
 </div>
@@ -25072,7 +25072,7 @@ lkIEAAAUlkIEAAAUlkIEAAAUlkIEAAAU1v8DPgen0xwwcrIAAAAASUVORK5CYII=
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11d112b0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0xd574080&gt;</pre>
 </div>
 
 </div>
@@ -27257,7 +27257,7 @@ dtype: float64
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: The wholesale distributor already has the data for the current delivery service of 5 days a week, which is case A. The wholesale distributor has to now implement case B, 3 days a week, and analyse the statistics of the segments again. The two customer segments that the distributor has now depends on dimesnion 1 and 2. Dimension 1 is positively controlled by sale of products Detergents_Paper, Grocery, Milk and Deli. So those customers for whom the sale of Dimension 1 positive products increase or remain the same are considered positivey reacting customers. Similarly for Dimension 2 products. Now the distributor can implement the case B only for these positive customers. Another use case of A/B testing could be on specific segments only. Lets say the wholesale distributor wants to increase the prize of few products: Product1 and Product2. Lets say there was negative response from 80% of Segment 0 customers and positive response from 20% of segment 1 customers. As a whole this looks like a failure case but it can be made a success case by concentrating only on segment 1 customer. The distributor can increase prize on product1 and product2 only for the 20% of positive customers in segment 1.</strong></p>
+<p><strong>Answer: The wholesale distributor has to partition all its customer into two groups, something like 20% of customers from segment 0 belong to group A and remaining belong to group B. Similarly 20% of customers from segment 1 are put into group A and remaining join the group B. Group A will be subject to the delivery service of 3 days/week and Group B will continue with 5 days/week. If Group A shows positive feedback, then the distributor has to check which customers provided the positive feedback. If the positive feedback was from customers beloning to both segment 0 and 1, then the distributor can make the delivery service change to 3 days/week for all its customers. If the positive feedback was from customer belonging only to segment 0 or 1, then the distributor should make the change only to one segment and keep the old delivery service to the other segment. If Group A had shown negative feedback, the the distributor has to keep the old delivery service of 5 days/week for all its customers</strong></p>
 
 </div>
 </div>
